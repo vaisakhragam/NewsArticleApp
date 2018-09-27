@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#47E4C2"
+    app:cardElevation="5dp"
+    android:id="@+id/tool_bar_layout">
+<RelativeLayout
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_menu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/nav_menu"
+        android:tint="#FFF"/>
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="NY Times Most Popular"
+        android:textColor="#FFF"
+        android:layout_marginLeft="10dp"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/img_menu" />
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/img_search"
+        android:padding="6dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/search_icon"
+        android:tint="#FFF"
+        android:layout_toLeftOf="@id/img_more" />
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/img_more"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/menu"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>
